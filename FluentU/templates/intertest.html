@@ -1,0 +1,236 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Language Learning Test</title>
+    <link rel="stylesheet" href="{% static 'css/test.css' %}">
+</head>
+<body>
+    <div class="qa_box">
+        <div class="qa_header">
+            <span>Score:<span id="score">0</span></span>
+            <span id="countdown">0</span>
+        </div>
+        <div class="qa_body">
+            <div class="qa_set active">
+                <h4>1. Which of the following is an example of a compound sentence?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a1">
+                    <span>a) She likes to read novels.</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a1">
+                    <span>b) He went to the store.</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a1" valid="valid">
+                    <span>c) I enjoy swimming, and my brother likes to play soccer.</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a1" >
+                    <span>d) They walked to the park.</span>
+                </div>
+                
+            </div>
+            <div class="qa_set">
+                <h4>2. Choose the correct form of the verb to complete the sentence: "She _______ English for five years."</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a2">
+                    <span>a) study</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a2">
+                    <span>b) studies</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a2" valid="valid">
+                    <span>c) is studying</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a2" >
+                    <span>d) studied</span>
+                </div>
+                
+            </div>
+            <div class="qa_set">
+                <h4>3. What is the plural form of "child"?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a3">
+                    <span>a) childs</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a3">
+                    <span>b) childrens</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a3" valid="valid">
+                    <span>c) childes</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a3" >
+                    <span>d) children</span>
+                </div>
+                
+            </div>
+            <div class="qa_set">
+                <h4>4. Identify the adjective in the sentence: "The big, fluffy dog ran quickly across the field."</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a4">
+                    <span>a) big</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a4">
+                    <span>b) fluffy</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a4" valid="valid">
+                    <span>c) quickly</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a4" >
+                    <span>d) ran</span>
+                </div>
+                
+            </div>
+            <div class="qa_set">
+                <h4>5. Choose the correct synonym for "happy":</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a5">
+                    <span>a) sad</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a5">
+                    <span>b) joyful</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a5" valid="valid">
+                    <span>c) angry</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a5" >
+                    <span>d) tired</span>
+                </div>
+                
+            </div>
+            <div class="qa_set">
+                <h4>6. What is the comparative form of "good"?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a6">
+                    <span>a) gooder</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a6" valid="valid">
+                    <span>b) better</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a6" >
+                    <span>c) best</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a6" >
+                    <span>d) goodest</span>
+                </div>
+                
+            </div>
+            <div class="qa_set">
+                <h4>7. Which of the following is a collective noun?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a7">
+                    <span>a) apple</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a7">
+                    <span>b) table</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a7" valid="valid">
+                    <span>c) team</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a7" >
+                    <span>d) house</span>
+                </div>
+                
+            </div>
+            <div class="qa_set">
+                <h4>8. Identify the word that means "to stop or cease":</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a8">
+                    <span>a) continue</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a8">
+                    <span>b) begin</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a8" valid="valid">
+                    <span>c) end</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a8" >
+                    <span>d) start</span>
+                </div>
+                
+            </div>
+            <div class="qa_set">
+                <h4>9. What does the abbreviation "ID" stand for?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a9">
+                    <span>a) Indian Document</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a9" valid="valid">
+                    <span>b) Identification</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a9" >
+                    <span>c) Identify</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a9" >
+                    <span>d) Internet Domain</span>
+                </div>
+                
+            </div>
+            <div class="qa_set">
+                <h4>10. Choose the correct preposition in the sentence: "The book is ________ the table."</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a10">
+                    <span>a) in</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a10" valid="valid">
+                    <span>b) on</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a10" >
+                    <span>c) at</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a10" >
+                    <span>d) by</span>
+                </div>
+                
+            </div>
+            <div class="qa_set active">
+                <h4>Your Total Score <span id="totalScore"> 0 </span>out of 100</h4>
+                <span id="userLevel"></span>
+                <div class="btn_container" id="endButtons" style="display:none;">
+                    <span class="btn1" id="retake"><a href="intertest">Re-Take</a></span>
+                    <span class="btn1" id="goback"><a href="inter">Go Back</a></span>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="qa_footer">
+            <span class="btn1" id="skip">Skip</span>
+            <div id="result"></div>
+        </div>
+    </div>
+    
+    <script src="{% static 'js/test.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FluentU English</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/global.css' %}">
+    <style>
+        /* Additional styles for the "Why Choose FluentU" section */
+        .header{
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("{% static 'images/ex.png' %}");
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        .why-choose-us {
+            margin: auto;
+            text-align: center;
+            padding-top: 100px; /* Adjust padding-top as needed */
+            padding-bottom: 50px; /* Add padding-bottom */
+        }
+
+        .why-choose-us h2 {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 50px; /* Adjust margin-bottom as needed */
+        }
+
+        .why-choose-us ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .why-choose-us ul li {
+            flex-basis: 30%;
+            background: #fff3f3;
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: 0.5s;
+            margin: 10px;
+        }
+
+        .why-choose-us ul li:hover {
+            box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+        }
+
+        /* Style for the Sign In/Register button */
+        .sign-in-register-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: rgb(67 22 45);
+            border: 1px solid white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s, border-color 0.3s, transform 0.3s; /* Added transform property */
+        }
+
+        .sign-in-register-btn:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px); /* Added translateY transformation */
+        }
+        @media (min-width: 768px) { /* Adjust this value as needed */
+            .fa-solid fa-xmark {
+                display: none; /* Hide the menu bar for screens wider than 768px */
+            }
+            .fa-solid fa-bars{
+                display: none;
+            }
+        }
+        .course-col .start-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background-color: #4CAF50; /* Green background color */
+            padding: 10px 20px; /* Adjust padding as needed */
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s; /* Added transform property */
+            margin-top: 20px; /* Add margin at the top */
+        }
+        
+        .course-col .start-btn:hover {
+            background-color: #45a049; /* Darker green on hover */
+            transform: translateY(-3px); /* Added translateY transformation */
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="#"><img src="{% static 'images/c2.png' %}"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="choice">COURSE</a></li>
+                    <li><a href="blog">BLOG</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                    {% if user.is_authenticated %}
+        <div class="frame-child2"></div>
+        <button><a class="sign-in-register-btn" href="Loginpage/logout">Hello, {{user.username}} LogOut</a></button>
+        {% else %}
+        <div class="frame-child2"></div>
+        <button><a class="sign-in-register-btn" href="Loginpage/register">Sign In/Register</a></button>
+        {% endif %} <!-- Added Sign In/Register button -->
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Welcome to FluentU</h1>
+            <p>- Your Ultimate Destination for English Language Learning!</p>
+            <a href="" class="hero-btn">Visit Us to Know More</a>
+        </div>
+    </section>
+
+   
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Each course is designed to meet the unique needs and proficiency levels of learners, providing a structured and engaging learning experience to help you achieve your language goals.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Beginner English Course</h3>
+                <p>A foundational course covering basic grammar, vocabulary, and essential communication skills for beginners.</p>
+                <a href="beginner" class="start-btn">Start</a>
+            </div>
+            <div class="course-col">
+                <h3>Intermediate English Course</h3>
+                <p>A course designed to build upon basic knowledge, focusing on more complex grammar structures, expanded vocabulary, and fluency development.</p>
+                <a href="inter" class="start-btn">Start</a>
+            </div>
+            <div class="course-col">
+                <h3>Advanced English Course</h3>
+                <p>An advanced-level course aimed at refining language skills, including advanced grammar topics, idiomatic expressions, and nuanced language use.</p>
+                <a href="adv" class="start-btn">Start</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="know-your-level">
+        <h2>Know Your Level</h2>
+        <div class="question-container">
+            <!-- Questions will be dynamically added here -->
+        </div>
+        <button id="take-test"><a href="leveltest">Take Test</a></button>
+    </section>
+
+
+    <!-- Why Choose FluentU Section -->
+    <section class="why-choose-us">
+        <h2>Why Choose FluentU?</h2>
+        <ul>
+            <li>Interactive and engaging learning experience</li>
+            <li>Structured courses tailored to your proficiency level</li>
+            <li>Expert instructors and comprehensive curriculum</li>
+            <li>Flexible learning options to fit your schedule</li>
+            <li>Proven track record of success from satisfied learners</li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="about-us">
+            <h2>About Us</h2>
+            <p>Know more about FluentU English and our mission to help you achieve fluency in English.</p>
+        </div>
+        <div class="customer-reviews">
+            <h2>Customer Reviews</h2>
+            <p>"FluentU English made learning English fun and effective for me. Highly recommended!" - John Doe</p>
+            <p>"I improved my English speaking skills significantly with FluentU. Thank you!" - Jane Smith</p>
+        </div>
+        <div class="contact-us">
+            <h2>Contact Us</h2>
+            <p>For inquiries, reach out to us:</p>
+            <p>Email: contact@fluentu.com</p>
+            <p>Phone: +1234567890</p>
+        </div>
+    </footer>
+    
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        var screenWidth = window.innerWidth; // Get current screen width
+
+        // Show or hide menu based on screen width
+        function toggleMenu() {
+            if (screenWidth <= 768) { // Adjust this value to match the media query value
+                navLinks.style.right="0";
+            } else {
+                navLinks.style.right="-200px";
+            }
+        }
+
+        // Initial toggle based on screen width
+        toggleMenu();
+
+        // Event listener for window resize
+        window.addEventListener('resize', function() {
+            screenWidth = window.innerWidth; // Update screen width on resize
+            toggleMenu(); // Toggle menu based on new screen width
+        });
+
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

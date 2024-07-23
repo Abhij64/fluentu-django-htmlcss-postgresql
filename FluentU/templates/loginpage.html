@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/SignUp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/styles1.css' %}">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form method="post" action="signup">
+                {% csrf_token %}
+                <h1>Sign Up</h1>
+                <h3>Create Account</h3>
+                <div class="social-icons">
+                    <a href="#" class="icong"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="iconl"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="icongi"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <span>Or use your Email for Registration</span>
+                <input type="text" name="username" placeholder="Username">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password1" placeholder="Password">
+                <input type="password" name="password2" placeholder="Confirm Password">
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>   
+        <div class="form-container sign-in">
+            <form method="post" action="login">
+                {% csrf_token %}
+                <h1>Log In</h1>
+                <div class="social-icons">
+                    <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F&ec=GAlAwAE&hl=en_GB&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-737620787%3A1710379560057233&theme=mn" class="icong"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="iconl"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="icongi"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <span>Or use your Username for Login</span>
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+                <a class="forgot" href="#">Forget Your Password?</a>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter Your credentials and Jump back to where you left off!</p>
+                    <button class="hidden" id="login">Login</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Ahoy Newbie!</h1>
+                    <p>Register with your personal details and Start on a new Journey</p>
+                    <button class="hidden" id="signup">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="{% static 'js/script1.js' %}"></script>
+</body>
+</html>

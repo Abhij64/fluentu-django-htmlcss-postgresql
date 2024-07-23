@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Set background color */
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgb(246, 232, 232); /* Keep background color white */
+    border: 5px solid #f3f3f3; /* Change border color to grey */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 20px; /* Adjust the value to move the heading down */
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif; /* Change font family */
+}
+
+h2 {
+    margin-top: 20px; /* Adjust the value to move the heading down */
+    font-size: 30px;
+    color: black;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif; /* Change font family */
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; /* Add transition effect */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Highlight effect on hover */
+}
+
+.box-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.take-test {
+    text-align: center; /* Center-align the button */
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+
+.take-test button {
+    padding: 10px 20px; /* Adjust padding for button size */
+    font-size: 16px; /* Adjust font size */
+    background-color: #f44336; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Apply border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.take-test button:hover {
+    background-color: #d32f2f; /* Darken button background color on hover */
+}
+
+.box-group .box {
+    width: calc(50% - 10px);
+    margin: 0 5px;
+}
+
+/* Apply styles for topics container, objectives container, and youtube links container */
+.topics-container .box,
+.objectives-container .box,
+.youtube-links .box {
+    background-color: #fff;
+    color: black;
+    font-size: 2rem;
+    border: 5px solid #f3f3f3; /* Change border color to grey */
+    border-radius: 10px;
+    padding: 20px; /* Add padding */
+    text-align: left; /* Left-align text */
+    transition: box-shadow 0.3s ease; /* Add transition effect */
+}
+
+.topics-container .box:hover,
+.objectives-container .box:hover,
+.youtube-links .box:hover {
+    background-color: #ede8e8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Highlight effect on hover */
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+}

@@ -1,0 +1,236 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Level Test</title>
+    <link rel="stylesheet" href="{% static 'css/test.css' %}">
+</head>
+<body>
+    <div class="qa_box">
+        <div class="qa_header">
+            <span>Score:<spam id="score">0</spam></span>
+            <span id="countdown">0</span>
+        </div>
+        <div class="qa_body">
+            <div class="qa_set active">
+                <h4>1. Which word means the opposite of "hot"?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a1">
+                    <span>warm</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a1">
+                    <span>cold</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a1" valid="valid">
+                    <span>cool</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a1" >
+                    <span>spicy</span>
+                </div>
+                
+            </div>
+            <div class="qa_set">
+                <h4>2. What is the plural form of "book"?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a2">
+                    <span>books</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a2">
+                    <span>bookes</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a2" valid="valid">
+                    <span>book's</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a2" >
+                    <span>bookies</span>
+                </div>
+                
+            </div>
+            <div class="qa_set">
+                <h4>3. Choose the correct form of the verb to complete the sentence: "She _______ to school every day."</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a3">
+                    <span>go</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a3">
+                    <span>goes</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a3" valid="valid">
+                    <span>going</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a3" >
+                    <span>goed</span>
+                </div>
+                
+            </div>
+            <div class="qa_set">
+                <h4>4. Which word means "a large body of water"?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a4">
+                    <span>river</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a4">
+                    <span>lake</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a4" valid="valid">
+                    <span>mountain</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a4" >
+                    <span>forest</span>
+                </div>
+                
+            </div>
+            <div class="qa_set">
+                <h4>5. What is the past tense of "see"?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a5">
+                    <span>saw</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a5">
+                    <span>seed</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a5" valid="valid">
+                    <span>seen</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a5" >
+                    <span>seeing</span>
+                </div>
+                
+            </div>
+            <div class="qa_set">
+                <h4>6. Identify the correct spelling:</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a6">
+                    <span>chldren</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a6">
+                    <span>childeren</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a6" valid="valid">
+                    <span>children</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a6" >
+                    <span>childern</span>
+                </div>
+                
+            </div>
+            <div class="qa_set">
+                <h4>7. Which word means "to give something to someone"?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a7">
+                    <span>take</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a7">
+                    <span>receive</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a7" valid="valid">
+                    <span>bring</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a7" >
+                    <span>give</span>
+                </div>
+                
+            </div>
+            <div class="qa_set">
+                <h4>8. What is the comparative form of "small"?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a8">
+                    <span>smaller</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a8">
+                    <span>smalliest</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a8" valid="valid">
+                    <span>smalling</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a8" >
+                    <span>smallful</span>
+                </div>
+                
+            </div>
+            <div class="qa_set">
+                <h4>9. Which of the following is a piece of furniture?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a9">
+                    <span>computer</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a9">
+                    <span>table</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a9" valid="valid">
+                    <span>television</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a9" >
+                    <span>phone</span>
+                </div>
+                
+            </div>
+            <div class="qa_set">
+                <h4>10. What does the abbreviation "USA" stand for?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a10">
+                    <span>United Soccer Association</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a10">
+                    <span>University of South America</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a10" valid="valid">
+                    <span>United States of America</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a10" >
+                    <span>Universal Security Agency</span>
+                </div>
+                
+            </div>
+            <div class="qa_set active">
+                <h4>Your Total Score <span id="totalScore"> 0 </span>out of 100</h4>
+                <span id="userLevel"></span>
+                <div class="btn_container" id="endButtons" style="display:none;">
+                    <span class="btn1" id="retake"><a href="beginner">Re-Take</a></span>
+                    <span class="btn1" id="goback"><a href="/">Go Back</a></span>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="qa_footer">
+            <span class="btn1" id="skip">Skip</span>
+            <div id="result"></div>
+        </div>
+    </div>
+    
+    <script src="{% static 'js/test.js' %}"></script>
+</body>
+</html>
